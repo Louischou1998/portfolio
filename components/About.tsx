@@ -21,11 +21,11 @@ const skillGroups = [
     skills: ["Python", "Pandas", "NumPy", "Power Automate", "Excel / CSV 處理", "資料清洗與轉換"],
   },
   {
-    category: "其他",
+    category: "領域知識",
     color: "from-slate-500 to-slate-600",
     bg: "bg-slate-50",
     border: "border-slate-100",
-    skills: ["Microsoft Sustainability Manager", "GHG Protocol", "LCA 生命週期評估", "Git", "REST API 串接"],
+    skills: ["業務流程分析", "跨部門需求溝通", "GHG Protocol", "LCA 生命週期評估", "Microsoft Sustainability Manager", "Git"],
   },
 ];
 
@@ -39,9 +39,9 @@ export default function About() {
           <h2 className="text-4xl font-bold text-slate-800 mb-6">關於我</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full mx-auto mb-8" />
           <p className="text-slate-500 max-w-2xl mx-auto leading-relaxed text-lg">
-            我是一位全端工程師，具備從前端 UI 設計到後端 API 開發、再到資料工程的完整技術視野。
-            曾參與 ESG 永續發展、智慧製造 MES 及 AI 城市應用等多元領域的系統開發，
-            擅長在複雜環境中快速理解系統架構並交付穩定的解決方案。
+            我是一位全端工程師，核心強項在於快速理解業務情境——不只寫程式，更擅長釐清各部門的需求與流程，
+            再以技術手段完整落地。曾橫跨 AI 城市服務、智慧製造 MES、ESG 跨部門碳管理等領域，
+            能從業務問題出發，設計並交付前後端整合的穩定解決方案。
           </p>
         </div>
 

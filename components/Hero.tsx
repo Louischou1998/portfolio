@@ -21,11 +21,11 @@ export default function Hero() {
 
         {/* Tagline */}
         <p className="text-xl md:text-2xl text-slate-500 mb-4 font-light">
-          打造高效能應用，從前端到後端到資料工程
+          從業務情境出發，將複雜流程轉化為可靠的全端系統
         </p>
         <p className="text-base text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-          專精於 React・.NET・Python 全端開發，
-          曾參與 ESG 碳足跡系統、MES 製造執行平台、AI 智慧城市應用等大型專案。
+          擅長深入理解跨部門業務需求，橫跨 AI 智慧城市、智慧製造 MES、ESG 永續管理等領域，
+          以 React・.NET・Python 完整交付從需求到上線的全端解決方案。
         </p>
 
         {/* CTAs */}
