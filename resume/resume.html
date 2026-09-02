@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>周鈺清 履歷</title>
+<style>
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  @page { size: A4; margin: 0; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", "Segoe UI", Arial, sans-serif;
+    color: #2b2f38;
+    font-size: 9.3pt;
+    line-height: 1.33;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    display: flex;
+  }
+  /* Sidebar */
+  .sidebar {
+    width: 64mm;
+    background: #eef0fb;
+    padding: 13mm 7.5mm 10mm 9.5mm;
+  }
+  .sidebar h2 {
+    font-size: 9.2pt;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #4c3fb0;
+    margin: 0 0 4mm 0;
+    padding-bottom: 1.5mm;
+    border-bottom: 1.2px solid #c9c3ef;
+  }
+  .sidebar .block { margin-bottom: 9mm; }
+  .sidebar .block:last-child { margin-bottom: 0; }
+  .photo-wrap {
+    width: 32mm;
+    height: 32mm;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 8mm auto;
+    border: 2.5px solid #ffffff;
+    box-shadow: 0 0 0 2px #c9c3ef;
+  }
+  .photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 18%;
+    display: block;
+  }
+  .contact-item {
+    display: block;
+    margin-bottom: 3.2mm;
+    font-size: 9.1pt;
+    color: #3a3f4c;
+    word-break: break-all;
+  }
+  .contact-item .label {
+    display: block;
+    font-size: 7.6pt;
+    color: #6b6f9a;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: .3mm;
+  }
+  .skill-cat { margin-bottom: 3.6mm; }
+  .skill-cat:last-child { margin-bottom: 0; }
+  .skill-cat h3 {
+    font-size: 8.6pt;
+    color: #4c3fb0;
+    margin: 0 0 1.6mm 0;
+    font-weight: 700;
+  }
+  .skill-cat p {
+    margin: 0;
+    font-size: 8.6pt;
+    color: #3a3f4c;
+    line-height: 1.55;
+  }
+  .edu-entry .school {
+    font-size: 9.2pt;
+    font-weight: 700;
+    color: #2b2f38;
+    margin-bottom: .8mm;
+  }
+  .edu-entry .degree {
+    font-size: 8.8pt;
+    color: #3a3f4c;
+    margin-bottom: .8mm;
+  }
+  .edu-entry .date {
+    font-size: 8.2pt;
+    color: #6b6f9a;
+  }
+
+  /* Main column */
+  .main {
+    flex: 1;
+    padding: 8mm 11.5mm 0mm 10mm;
+  }
+  .name {
+    font-size: 21.5pt;
+    font-weight: 700;
+    color: #211e33;
+    margin: 0 0 1mm 0;
+    letter-spacing: 1px;
+  }
+  .title {
+    font-size: 10.6pt;
+    color: #4c3fb0;
+    font-weight: 600;
+    margin: 0 0 5mm 0;
+  }
+  .main h2 {
+    font-size: 10pt;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #4c3fb0;
+    margin: 0 0 2.5mm 0;
+    padding-bottom: 1.2mm;
+    border-bottom: 1.2px solid #d8d5ef;
+  }
+  .section { margin-bottom: 3.5mm; }
+  .section:last-child { margin-bottom: 0; }
+  .summary { margin: 0; color: #3a3f4c; font-size: 9.3pt; line-height: 1.62; }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: .8mm;
+  }
+  .job-company { font-size: 10.1pt; font-weight: 700; color: #211e33; }
+  .job-role { font-size: 9.1pt; color: #4c3fb0; font-weight: 600; }
+  .job-date { font-size: 8.4pt; color: #6b6f9a; white-space: nowrap; font-weight: 600; }
+  .job-intro { margin: .8mm 0 2mm 0; color: #3a3f4c; font-size: 8.9pt; }
+
+  .proj {
+    margin-bottom: 2.6mm;
+    padding-left: 3.2mm;
+    border-left: 2px solid #d8d5ef;
+  }
+  .proj:last-child { margin-bottom: 0; }
+  .proj-title { font-size: 9.3pt; font-weight: 700; color: #2b2f38; margin-bottom: .6mm; }
+  .proj-title .sub { font-weight: 400; color: #6b6f9a; font-size: 8.3pt; }
+  .proj ul { margin: .7mm 0 1mm 0; padding-left: 4mm; }
+  .proj li { margin-bottom: .5mm; color: #3a3f4c; }
+  .tech-line { font-size: 8pt; color: #6b6f9a; }
+  .tech-line b { color: #4c3fb0; font-weight: 700; }
+
+  .side-proj { margin-bottom: 2.2mm; }
+  .side-proj:last-child { margin-bottom: 0; }
+  .side-proj-title { font-size: 9.3pt; font-weight: 700; color: #2b2f38; }
+  .side-proj-title .sub { font-weight: 400; color: #6b6f9a; font-size: 8.3pt; }
+  .side-proj ul { margin: .7mm 0 1mm 0; padding-left: 4mm; }
+  .side-proj li { margin-bottom: .5mm; color: #3a3f4c; }
+  .side-proj .link { font-size: 8pt; color: #4c3fb0; }
+</style>
+</head>
+<body>
+  <div class="page">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="photo-wrap">
+        <img src="assets/headshot.jpg" alt="周鈺清">
+      </div>
+      <div class="block">
+        <h2>Contact</h2>
+        <span class="contact-item"><span class="label">Phone</span>0978-657-564</span>
+        <span class="contact-item"><span class="label">Email</span>q7w78e789@gmail.com</span>
+        <span class="contact-item"><span class="label">LinkedIn</span>linkedin.com/in/鈺清-周</span>
+        <span class="contact-item"><span class="label">GitHub</span>github.com/Louischou1998</span>
+      </div>
+
+      <div class="block">
+        <h2>Skills</h2>
+        <div class="skill-cat">
+          <h3>前端</h3>
+          <p>React・Next.js・JavaScript (ES6+)・HTML / CSS</p>
+        </div>
+        <div class="skill-cat">
+          <h3>後端</h3>
+          <p>C# / ASP.NET Core・API・SQL Server</p>
+        </div>
+        <div class="skill-cat">
+          <h3>資料工程</h3>
+          <p>Python (Pandas, NumPy)・Power Automate・Excel / CSV 處理・資料清洗與轉換</p>
+        </div>
+        <div class="skill-cat">
+          <h3>領域知識</h3>
+          <p>業務流程分析・跨部門需求溝通・GHG Protocol・LCA 生命週期評估・Microsoft Sustainability Manager・Git</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <h2>Education</h2>
+        <div class="edu-entry">
+          <div class="school">國立陽明交通大學</div>
+          <div class="degree">管理科學研究所　碩士</div>
+          <div class="date">2021 – 2023</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <div class="name">周鈺清　Yu-Ching Chou</div>
+      <div class="title">全端工程師 Full-Stack Developer</div>
+
+      <div class="section">
+        <h2>Summary</h2>
+        <p class="summary">
+          全端工程師，核心強項在於快速理解業務情境──不只寫程式，更擅長釐清各方需求並轉化為可執行的技術方案。
+          具備 React / TypeScript 前端與 C# ASP.NET Core 後端全端開發經驗，並熟悉 Python 資料工程與流程自動化，
+          能從需求訪談、系統設計到上線交付，獨立完成前後端整合的解決方案。
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Work Experience</h2>
+        <div class="job-header">
+          <span class="job-company">PwC 資誠 (PricewaterhouseCoopers Taiwan)</span>
+          <span class="job-date">2023.07 – 至今</span>
+        </div>
+        <div class="job-role">Consultant Associate</div>
+        <p class="job-intro">於 PwC 服務團隊負責跨產業委任專案開發，專案涵蓋智慧城市 AI 平台、維穎科技 ESG 碳足跡量化系統、科研機構智慧製造 MES 系統，橫跨前後端全端實作。</p>
+
+        <div class="proj">
+          <div class="proj-title">TARS AI 平台 <span class="sub">— 智慧城市 AI 應用</span></div>
+          <ul>
+            <li>中途接手既有 AI 平台，短時間內完成 Onboarding、掌握陌生程式碼架構，於不影響線上服務的前提下快速進入狀況。</li>
+            <li>系統性排查前端畫面異常、API 回傳錯誤與資料顯示問題，定位根本原因並提交 Hotfix，提升平台穩定性與使用者體驗。</li>
+          </ul>
+          <div class="tech-line"><b>技術：</b>React・TypeScript・REST API・Debugging</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-title">MES 製造執行系統 <span class="sub">— 科研機構合作案．全端 SPA 開發</span></div>
+          <ul>
+            <li>前端以 React 搭配 .NET 框架建構 SPA，規劃元件化架構，開發生產排程看板與製程監控儀表板。</li>
+            <li>後端以 C# ASP.NET Core 設計 RESTful API，實作工單管理、製程參數紀錄、異常事件處理等業務邏輯。</li>
+            <li>完成 Entity Framework / SQL Server 資料存取層設計，確保前後端 API 資料流通順暢。</li>
+          </ul>
+          <div class="tech-line"><b>技術：</b>React・TypeScript・C#・ASP.NET Core・Entity Framework・SQL Server</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-title">ESG 碳足跡計算系統 <span class="sub">— 維穎科技合作案．跨部門業務整合 × 資料工程</span></div>
+          <ul>
+            <li>統整採購、製造、物流、廢棄等多部門碳排數據需求，擔任永續部門與系統開發端的溝通橋梁。</li>
+            <li>以 GHG Protocol 國際標準為框架，協助業務人員釐清排放邊界與計算規則，轉譯為可執行的系統設計與自動化流程。</li>
+            <li>以 Python 進行跨來源資料前處理（缺值、格式標準化、異常過濾），並於 Microsoft Sustainability Manager 建立排程與工作流（Power Automate）。</li>
+          </ul>
+          <div class="tech-line"><b>技術：</b>Python・Pandas・NumPy・Power Automate・Microsoft Sustainability Manager・GHG Protocol</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Side Projects</h2>
+
+        <div class="side-proj">
+          <div class="side-proj-title">命運之眼．AI 塔羅占卜網站 <span class="sub">— 個人專案</span></div>
+          <ul>
+            <li>從零設計開發 AI 塔羅占卜網站，內建 78 張完整牌組，支援單張、三牌、凱爾特十字等多種牌陣。</li>
+            <li>前端以 Vanilla JS 手刻 Canvas 星空與翻牌動畫；後端以 Node.js / Express 串接 Claude AI，實作 SSE 串流對話與角色扮演 Prompt 設計。</li>
+          </ul>
+          <div class="tech-line"><b>技術：</b>Vanilla JS・Canvas API・Node.js・Express・Claude AI・SSE・Railway　<span class="link">mystic-tarot-production-9098.up.railway.app</span></div>
+        </div>
+
+        <div class="side-proj">
+          <div class="side-proj-title">塔羅阿 POS 系統 <span class="sub">— 個人專案，實際導入美髮沙龍使用</span></div>
+          <ul>
+            <li>為實體美髮店設計開發全功能 POS 系統，涵蓋預約行事曆、收銀結帳、庫存管理、員工薪資、每日結算等完整業務流程。</li>
+            <li>前端以 React + Ant Design 實作角色權限控管與 WebSocket 即時同步；後端採 FastAPI + Supabase，並提供公開線上預約入口。</li>
+          </ul>
+          <div class="tech-line"><b>技術：</b>React・Vite・Ant Design・FastAPI・Supabase・WebSocket・Vercel・Railway　<span class="link">beauty-pos-peach.vercel.app</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
